@@ -1,0 +1,77 @@
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 20px auto; 
+
+ }
+ 
+ /* Remove margens padrão e define a fonte da página */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Inputs escuros quando dark mode estiver ativo */
+.dark-mode input {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mensagem de erro abaixo do formulário */
+#mensagemErro {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+/* Lista onde os convidados serão exibidos */
+#listaConvidados {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Card individual de cada convidado */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+/* Card no modo escuro */
+.dark-mode .card {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+.card p {
+    margin-bottom: 6px;
+}
+
+/* Botão de remover convidado */
+.remover {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
