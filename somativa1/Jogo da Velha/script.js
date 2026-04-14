@@ -83,7 +83,7 @@ statusText.textContent = "Vez do jogador " + currentPlayer;
 
 // Verifica vencedor
 function checkWinner() {  //Cria uma função chamada checkWinner que serve para verificar se algum jogador venceu ou se deu empate.
-    let roundWon = false; // Cria uma variáel chamada roundWon que começa como false. Ela vai idicar se alguém indicou a rodada.
+    let roundWon = false; // Cria uma variáel chamada roundWon que começa como false. Ela vai idicar se alguém venceu a rodada.
     let winner = "";   // Cria uma variável winner vazia. Ela vai guardar quem venceu (X ou O).
 
     for (let condition of winConditions) { //Cria um laço de repetição que percorre todas as combinações possíveis de vitória do jogo-da velha. Ex: linha, coluna diagonal.
@@ -97,7 +97,7 @@ function checkWinner() {  //Cria uma função chamada checkWinner que serve para
         if (a === "" || b === "" || c === "") continue;  // Verifica se alguma das posições está vazia. Se estiver, significa que não tem como ter vitória ali ainda, então pula para a próxima combinação
         // Se a combinação está vazia, ele continua
 
-        if (a === b && b === c) { //Verifica se a; b; c;  São iguais, se forem iguais significa que algúem completou a linha e venceu
+        if (a === b && b === c) { //Verifica se a; b; c;  São iguais, se forem iguais significa que algúem completou alguma linha e venceu
             roundWon = true;  //define que a rodada foi vencida
             winner = a; // Guarda quem ganhou (X ou O)
             break;
